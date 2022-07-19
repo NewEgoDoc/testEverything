@@ -51,7 +51,7 @@ jobs:
       if: contains(github.ref, 'develop')
       run: |
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-          docker build -f Dockerfile-dev -t ${{ secrets.DOCKER_REPO }}/springtest .
+          docker build -f Dockerfile -t ${{ secrets.DOCKER_REPO }}/springtest .
           docker push ${{ secrets.DOCKER_REPO }}/dotoriham-dev
 
     ## deploy 
