@@ -42,7 +42,7 @@ jobs:
 
     ## gradle build
     - name: Change wrapper permissions
-      run: chmod +c 777 ./gradlew
+      run: chmod -c 777 ./gradlew
     - name: Build with Gradle
       run: ./gradlew build
 
