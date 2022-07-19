@@ -41,10 +41,10 @@ jobs:
           ${{ runner.os }}-gradle-
 
     ## gradle build
+    - name: Change wrapper permissions
+      run: chmod +x ./gradlew
     - name: Build with Gradle
-      run:
-      chmod +x ./gradlew
-      ./gradlew build -x test -x ktlintCheck -x ktlintTestSourceSetCheck -x ktlintMainSourceSetCheck -x ktlintKotlinScriptCheck
+      run: ./gradlew build -x test -x ktlintCheck -x ktlintTestSourceSetCheck -x ktlintMainSourceSetCheck -x ktlintKotlinScriptCheck
 
     ## docker build & push to develop
     - name: Docker build & push to dev
