@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.testeverything.domain.PersonTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-12T07:21:53" hostname="DESKTOP-75FSE5T" time="0.057">
+  <properties/>
+  <testcase name="test()" classname="com.example.testeverything.domain.PersonTest" time="0.057"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
