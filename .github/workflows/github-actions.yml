@@ -44,7 +44,7 @@ jobs:
     - name: Change wrapper permissions
       run: chmod +c 777 ./gradlew
     - name: Build with Gradle
-      run: ./gradlew build -x test -x ktlintCheck -x ktlintTestSourceSetCheck -x ktlintMainSourceSetCheck -x ktlintKotlinScriptCheck
+      run: ./gradlew build
 
     ## docker build & push to develop
     - name: Docker build & push to dev
